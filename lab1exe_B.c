@@ -55,7 +55,7 @@ void create_table(double v)
     printf("(deg)           (sec)       (m)\n");
 
     int i;
-    for ( i = 5; i <= 90; i += 5 )
+    for ( i = 0; i <= 90; i += 5 )
     {
         double a_rad = degree_to_radian(i);  // convert angle from degrees to radians
         double dist = Projectile_travel_distance(a_rad,v);
