@@ -68,13 +68,13 @@ void create_table(double v)
 double Projectile_travel_distance(double a, double v)
 {  
     // d = v^2/g*sin(2*theta)
-    return pow(v,2)/G*sin(2*a_rad);
+    return pow(v,2)/G*sin(2*a);
 }
 
 double Projectile_travel_time(double a, double v)
 {
     // t = 2*v*sin(theta)/g
-    return 2*v*sin(a_rad)/G;
+    return 2*v*sin(a)/G;
 }
 
 double degree_to_radian(double d){
