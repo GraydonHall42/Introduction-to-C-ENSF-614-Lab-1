@@ -57,8 +57,9 @@ void create_table(double v)
     int i;
     for ( i = 5; i <= 90; i += 5 )
     {
-        double dist = Projectile_travel_distance(i,v);
-        double time = Projectile_travel_time(i, v);
+        double a_rad = degree_to_radian(i);  // convert angle from degrees to radians
+        double dist = Projectile_travel_distance(a_rad,v);
+        double time = Projectile_travel_time(a_rad, v);
         printf("%d         %lf     %lf\n", i, time, dist);
     }
 }
@@ -67,14 +68,12 @@ void create_table(double v)
 double Projectile_travel_distance(double a, double v)
 {  
     // d = v^2/g*sin(2*theta)
-    double a_rad = degree_to_radian(a);  // convert angle from degrees to radians
     return pow(v,2)/G*sin(2*a_rad);
 }
 
 double Projectile_travel_time(double a, double v)
 {
     // t = 2*v*sin(theta)/g
-    double a_rad = degree_to_radian(a);  // convert angle from degrees to radians
     return 2*v*sin(a_rad)/G;
 }
 
