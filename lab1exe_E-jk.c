@@ -1,7 +1,8 @@
 /*
- *  lab1exe_E.c
- *  ENSF 619 Lab 1 Exercise E - Fall 2021
- *
+ *  File Name: lab1exe_E.c
+ *  Assignment: Lab 1 Exercise E
+ *  Completed by: Graydon Hall and Jared Kraus
+ *  Submission Date: September 21, 2021
  */
 
 #include <stdio.h>
